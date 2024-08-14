@@ -1,39 +1,93 @@
-.home {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
-  padding: 10rem 0;
-  text-align: center;
+body {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
 }
 
-.home h1 {
+.home-container {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #ffffff;
+  height: 100vh; /* Make sure it covers the full viewport height */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-content {
+  max-width: 600px;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+h1 {
   font-size: 3rem;
-  margin-top: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-.home p {
+h2 {
   font-size: 1.5rem;
-  margin-top: 1rem;
-  font-weight: 300; /* Light font weight for a sleek look */
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .bio {
-  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 300;
-  max-width: 800px; /* Limits the width of the bio for better readability */
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-link.linkedin {
+  background-color: #0077b5;
+}
+
+.social-link.facebook {
+  background-color: #1877f2;
+}
+
+.social-link.twitter {
+  background-color: #1da1f2;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
 }
 
 .profile-pic {
-  width: 150px; /* Diameter of the circular image */
-  height: 150px; /* Diameter of the circular image */
-  border-radius: 50%; /* Creates the circular shape */
-  border: 4px solid white; /* Adds a border around the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  object-fit: cover; /* Ensures the image covers the circular area */
-  object-position: top; /* Adjusts the image to align the top part */
+  width: 300px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
